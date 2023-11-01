@@ -8,9 +8,10 @@
 
 <details>
 <summary>Tecnologias usadas:</summary>
-  -HTML
+  
+![image](https://github.com/Gabryel-Kolzenti/cafeteria/assets/140856204/d63b13a8-e2b1-479f-a9f3-5610572d366e)
 
-  -CSS
+![image](https://github.com/Gabryel-Kolzenti/cafeteria/assets/140856204/379a3e68-4bda-45c1-99f2-5dcf90dcfdcb)
   
 </details>
 
