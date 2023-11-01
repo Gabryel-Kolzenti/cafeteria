@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f0eae7;
+}
+
+h1{
+font-family: 'Shantell Sans', cursive;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 1% 12%;
+    white-space: nowrap;
+    color: #5e4238;
+}
+
+header nav img {
+    width: 6%;
+}
+
+nav h1 {
+    font-size: 2rem;
+    margin-right: 31.5%;
+    margin-left: 1.5%;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #5e4238;
+    font-size: 1.7rem;
+    margin-left: 5%;
+}
+
+nav div a:hover {
+    background-color: #5e4238;
+    color: #f0eae7;
+    border-radius: 15px;
+    padding: 2%;
+    transition: 0.4s;
+}
+
+.Home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #5e4238;
+    padding: 4% 12%;
+}
+
+main {
+    align-items: center;
+}
+
+.imageCoffe{
+    display: flex;
+    justify-content: end;
+}
+
+section img {
+    width: 80%;
+}
+
+main article {
+    text-align: justify;
+    width: 80%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+main article p {
+    margin-bottom: 10%;
+    text-align: justify;
+}
+
+main article a {
+    text-decoration: none;
+    color: #5e4238;
+    background-color: #f0eae7;
+    font-size: 1.3rem;
+    padding: 2.5% 5%;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+main article a:hover{
+    text-decoration: none;
+    color: #f0eae7;
+    background-color:#F7A331;
+    font-size: 1.5rem;
+    padding: 2.5% 5%;
+    border-radius: 15px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.container{
+    background-image: url(img/Vector\ 1.png);
+    background-size: cover;
+    transform: translate(0%, -22%);
+    background-color: #5e4238;
+    height: 110%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute; /* Possibilita mexer e posicionar a imagem/item */
+    top: 50%; /* Funciona como margin-top*/
+    left: 50%; /* Funciona como margin-left*/
+    padding-left: 10%;
+    transform: translate(-50%, 30%); /* Usado para modificar a posição do eixo central da imagem/item (a referência costuma ser na ponta e não no centro, por isso precisamos ajustar a posição do eixo)*/
+}
+
+div h2 {
+    font-size: 2rem;
+    margin-top: 11%;
+    color: #F7A331;
+}
+
+.imagem {
+    gap: 10%;
+    margin-top: 0.5%;
+    padding-bottom: 1%;
+    margin-right: 2%;
+    background-color: #DACCBA;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 20%; /* Deve ser 100%/6, pois a imagem que aumentamos, agora precisa ser dividida em partes iguais ao numero de imagens */
+    transition: 0.7s;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.imagem img{
+    margin-left: 25%;
+    margin-top: 16%;
+    height: 86%;
+    width: 100%;
+}
+
+.bar {
+    background-color: #5e4238;
+    width: 42px;
+    height: 12px;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar:hover{
+   background: #F7A331;
+}
+
+.none{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 500%; /* Deve ser 6x maior, pois o flex fez o tamanho total ser dividido pelo número de imagens*/
+}
+
+.produtos {
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+
+div h3 {
+    font-size: 2rem;
+    margin-bottom: 3%;
+    margin-top: -10%;
+    color: #6C492E;
+}
+
+div .informacoes {
+    color: #5e4238;
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+    text-align: justify;
+    margin-right: 25%;
+}
+
+div .preco {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5e4238;
+}
+
+div .btn{
+    text-decoration: none;
+    color: #f0eae7;
+    background-color: #5e4238;
+    font-size: 1.5rem;
+    padding: 0.8%;
+    position: absolute;
+    bottom: 17%;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+div .btn:hover {
+    text-decoration: none;
+    color: #f0eae7;
+    background-color: #F7A331;
+    font-size: 1.6rem;
+    padding: 0.9%;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+/* Quando o (imagem1 estiver checkado) --> .img1 */
+#imagem1:checked ~ .imagem1 {
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .imagem1 {
+    margin-left: -23%;
+}
+
+#imagem3:checked ~ .imagem1 {
+    margin-left: -45%;
+}
+
+#imagem4:checked ~ .imagem1 {
+    margin-left: -67%;
+}
+
+#imagem5:checked ~ .imagem1 {
+    margin-left: -89%;
+}
+
+.sobre {
+    margin-top: 49%;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #5e4238;
+    padding: 4% 12%;
+}
+
+section {
+    align-items: center;
+}
+
+section article {
+    text-align: justify;
+    width: 80%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+section article p {
+    margin-bottom: 10%;
+    text-align: justify;
+}
+
+section article a {
+    text-decoration: none;
+    color: #5e4238;
+    background-color: #f0eae7;
+    font-size: 1.3rem;
+    padding: 2.5% 5%;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+section article a:hover{
+    text-decoration: none;
+    color: #f0eae7;
+    background-color:#F7A331;
+    font-size: 1.5rem;
+    padding: 2.5% 5%;
+    border-radius: 15px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #c2b9ae;
+    gap: 8%;
+}
+
+form {
+    color: #000000;
+    width: 82%;
+}
+
+.tituloForm {
+    font-size: 1.8rem;
+    margin-bottom: 10%;
+    color: #000000;
+}
+
+form fieldset {
+    border-radius: 4px;
+    margin-bottom: 4%;
+    background-color: #747474;
+    padding: 1%;
+}
+
+.dados {
+    background-color: #747474;
+    font-size: 1.1rem;
+    color: #000000;
+    padding-left: 5%;
+}
+
+input::placeholder {
+    color: black;
+  }
+
+.btnForm{
+    text-decoration: none;
+    color: #f0eae7;
+    background-color: #919191;
+    font-size: 1.5rem;
+    padding: 0.8% 12.6%;
+    position: absolute;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+.btnForm:hover {
+    text-decoration: none;
+    color: #f0eae7;
+    background-color: #F7A331;
+    font-size: 1.5rem;
+    padding: 0.8% 12.6%;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+footer {
+    background-color: #5e4238;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.8%;
+}
