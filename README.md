@@ -7,7 +7,7 @@
 ![image](https://github.com/Gabryel-Kolzenti/cafeteria/assets/140856204/a46c3b49-a79f-42d0-abd8-4e9b5d740e54)
 
 <details>
-<sumary>Tecnologias usadas:</sumary>
+<summary>Tecnologias usadas:</summary>
   -HTML
 
   -CSS
